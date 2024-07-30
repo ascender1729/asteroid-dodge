@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Defender</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container"></div>
+    <div id="ui-overlay">
+        <div id="score">Score: 0</div>
+        <div id="health">Health: 100%</div>
+        <div id="shield">Shield: 100%</div>
+        <div id="weapon-heat">Weapon Heat: 0%</div>
+    </div>
+    <div id="menu">
+        <h1>Cosmic Defender</h1>
+        <div id="main-menu">
+            <button id="start-button">Start Game</button>
+            <button id="instructions-button">Instructions</button>
+            <button id="highscores-button">High Scores</button>
+        </div>
+        <div id="instructions" class="hidden">
+            <h2>How to Play</h2>
+            <p>Use WASD or arrow keys to navigate your spacecraft</p>
+            <p>Press SPACE to fire your weapons</p>
+            <p>Destroy asteroids and collect power-ups to increase your score</p>
+            <p>Watch your health and shield levels</p>
+            <p>Avoid overheating your weapons</p>
+            <button id="back-button">Back to Menu</button>
+        </div>
+        <div id="highscores" class="hidden">
+            <h2>High Scores</h2>
+            <ol id="highscores-list"></ol>
+            <button id="back-button-scores">Back to Menu</button>
+        </div>
+    </div>
+    <div id="game-over" class="hidden">
+        <h2>Game Over</h2>
+        <p>Your score: <span id="final-score"></span></p>
+        <input type="text" id="player-name" placeholder="Enter your name">
+        <button id="submit-score">Submit Score</button>
+        <button id="restart-button">Play Again</button>
+        <button id="menu-button">Main Menu</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="js/SceneManager.js"></script>
+    <script src="js/Spacecraft.js"></script>
+    <script src="js/Asteroid.js"></script>
+    <script src="js/PowerUp.js"></script>
+    <script src="js/Projectile.js"></script>
+    <script src="js/UI.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

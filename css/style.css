@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#game-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#ui-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+#ui-overlay > div {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#menu, #game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #00ffff;
+}
+
+button {
+    background-color: #00ffff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff00ff;
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="text"] {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+#highscores-list {
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+}
