@@ -1,6 +1,6 @@
 # Cosmic Defender
 
-Cosmic Defender is an exciting 3D space shooter game built with Three.js. Navigate through an asteroid field, destroy incoming threats, and collect power-ups to survive as long as possible!
+Cosmic Defender(Prev. Asteroid Dodge) is an exciting 3D space shooter game built with Three.js. Navigate through an asteroid field, destroy incoming threats, and collect power-ups to survive as long as possible!
 
 ## Features
 
